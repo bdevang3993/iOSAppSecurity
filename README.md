@@ -599,6 +599,32 @@ struct SecureShieldDemoApp: App {
     }
 }
 ```
+# Swift Integration (SceneDelegate)
+---
+let window = UIWindow(windowScene: windowScene)
+        
+        let mainVC = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        // Wrap UIKit VC → SwiftUI → ScreenshotPreventView
+        
+        let navigationController =
+                    UINavigationController(rootViewController: mainVC)
+
+        let protectedRoot = ScreenshotPreventView {
+                    NavigationControllerWrapper(
+                        navigationController: navigationController
+                    )
+                }
+        
+        let hostingController =
+                    UIHostingController(rootView: protectedRoot)
+        
+        window.rootViewController = hostingController
+        self.window = window
+        window.makeKeyAndVisible()
+
+
 
 ---
 
