@@ -8,6 +8,19 @@ This document explains how to install, configure, and use the Protection SDK in 
 
 ---
 
+### Supported Threat Types
+### SSL pinning failure
+### Jailbreak detection
+### Debugger detection
+### Hooking detection
+### Runtime manipulation
+### Integrity compromise
+### Screen recording
+### Screen mirroring
+### VPN detection
+
+---
+
 # Package Contents
 
 ```text
