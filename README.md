@@ -269,6 +269,10 @@ For maximum protection:
 * Monitor security telemetry events
 
 ---
+# set up cuatom Image for screenshot prevention
+please add your custom image in asset and name should be "screenshotPreventionImage" 
+
+----
 
 # Version Information
 
